@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background: radial-gradient(#1f3756, #141539);
+  height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+header {
+  width: 55%;
+  padding: 1rem 1.5rem;
+  margin: 3rem auto;
+  border-radius: 1rem;
+  border: 3px solid #606e85;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+  line-height: 0.8;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+
+header .result-box {
+  width: 9.5rem;
+  background: white;
+  padding-bottom: 1.3rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+header .result-box p {
+  letter-spacing: 1px;
+  color: #2a46c0;
+  margin-bottom: 0.5rem;
+}
+
+header .result-box h1 {
+  color: #3b4363;
+  font-size: 4.2rem;
+}
+
+.game-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-area div {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-area div img {
+  width: 70px;
+}
+
+.game-area .paper {
+  border: 20px solid #5671f5;
+}
+
+.game-area .scissors {
+  border: 20px solid #eca922;
+}
+
+.game-area .rock {
+  border: 20px solid #dd405d;
+}
+/*# sourceMappingURL=style.css.map */
