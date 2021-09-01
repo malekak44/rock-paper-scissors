@@ -10,58 +10,59 @@
 </head>
 
 <body>
-
-  <header>
-    <div class="name">
-      <h1>Rock</h1>
-      <h1>Paper</h1>
-      <h1>Scissors</h1>
-    </div>
-    <div class="result-box">
-      <p>SCORE</p>
-      <h1 id="score">12</h1>
-    </div>
-  </header>
-
   <main>
-    <section class="game-area">
-      <div id="player" style="display: none;">
+    <div class="header">
+      <div class="game-name">
+        <h1>Rock <br>Paper <br> Scissors</h1>
+      </div>
+      <div class="scoreboard">
+        <p>Score</p>
+        <h1 class="value">0</h1>
+      </div>
+    </div>
+    <div class="game-area">
+      <div id="paper" class="button"><span><img src="images/icon-paper.svg" alt="paper"></span></div>
+      <div id="scissors" class="button"><span><img src="images/icon-scissors.svg" alt="scissors"></span></div>
+      <div id="rock" class="button"><span><img src="images/icon-rock.svg" alt="rock"></span></div>
+    </div>
+    <div class="result-container">
+      <div class="player">
+        <div class="player-status ">
+          <h1>You Picked</h1>
+        </div>
+        <div id="player"><span id="game-1"><img src="images/icon-paper.svg" alt="paper" id="user"></span></div>
+      </div>
+      <div class="computer ">
+        <div class="computer-status ">
+          <h1>The House Picked</h1>
+        </div>
+        <div class="invisible">
+          <div id="computer"><span id="game-2"><img src="images/icon-rock.svg" alt="rock" id="machine"></span></div>
+        </div>
+      </div>
+      <div class="result-title">
 
+        <div>
+          <h1 id="status">You win</h1>
+        </div>
+        <div class="play-again">Play Again</div>
       </div>
-      <h1 id="finalText" style="color: white;"></h1>
-      <div id="computer" style="display: none;">
+    </div>
 
+    <div class="rules">Rules</div>
+    <div class="rules-overlay">
+      <div class="rules-container">
+        <div class="rules-title">Rules</div>
+        <div class="cross-btn">
+          <img src="images/icon-close.svg" alt="close">
+        </div>
+        <div class="rules-img"><img src="images/image-rules.svg" alt="rules"></div>
       </div>
-      <div class="paper">
-        <img src="images/icon-paper.svg" alt="paper">
-      </div>
-      <div class="scissors">
-        <img src="images/icon-scissors.svg" alt="scissors">
-      </div>
-      <div class="rock">
-        <img src="images/icon-rock.svg" alt="rock">
-      </div>
-    </section>
+    </div>
   </main>
 
-  <!-- Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again -->
-
-  <!-- <div class="container">
-    <img class="rock" src="images/icon-rock.svg" alt="rock">
-    <img class="paper" src="images/icon-paper.svg" alt="paper">
-    <img class="scissor" src="images/icon-scissors.svg" alt="scissor">
-  </div> -->
-
-  <script src="app/js/app.js"></script>
+  <!-- <script src="modal.js"></script>
+  <script src="app.js"></script> -->
 </body>
 
 </html>

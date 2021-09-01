@@ -1,0 +1,39 @@
+.header {
+    width: 55%;
+    padding: 1rem 1.5rem;
+    margin: 3rem auto;
+    border-radius: 1rem;
+    border: 3px solid hsl(217, 16%, 45%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        color: white;
+        margin: 0;
+        line-height: 0.8;
+        font-size: 42px;
+        text-transform: uppercase;
+    }
+
+    .scoreboard {
+        width: 9.5rem;
+        background: white;
+        padding: 1rem 0 1.3rem;
+        text-align: center;
+        border-radius: 8px;
+
+        p {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: hsl(229, 64%, 46%);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        h1 {
+            color: hsl(229, 25%, 31%);
+            font-size: 4.2rem;
+        }
+    }
+}
